@@ -65,7 +65,7 @@ defmodule ESpec.JUnitFormatter do
   defp one_line_description(example) do
     ESpec.Example.context_descriptions(example) ++ [example.description]
     |> Enum.join(" ")
-    |> String.rstrip
+    |> String.trim_trailing()
   end
 
   defp calculate_stats(examples, {start_loading_time, _, finish_specs_time}) do

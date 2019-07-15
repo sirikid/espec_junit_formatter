@@ -32,5 +32,5 @@ defmodule ESpec.JUnitFormatter.XMLFormatter do
   end
 
   defp test_content(nil), do: []
-  defp test_content(content), do: [String.to_char_list(content)]
+  defp test_content(content), do: [String.to_charlist(content)]
 end

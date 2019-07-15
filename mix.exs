@@ -20,7 +20,7 @@ defmodule ESpec.JUnitFormatter.Mixfile do
 
   defp deps do
     [
-      {:espec, "~> 1.3"},
+      {:espec, "~> 1.6"},
       {:ex_doc, "~> 0.14.3", only: [:docs, :dev]}
     ]
   end
